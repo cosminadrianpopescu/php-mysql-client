@@ -748,7 +748,7 @@
         // if true it search for next item
         function reverse_history_search(next) {
             var history_data = history.data();
-            var regex = new RegExp('^' + reverse_search_string);
+            var regex = new RegExp(reverse_search_string, 'i');
             var len = history_data.length;
             if (next && reverse_search_position > 0) {
                 len -= reverse_search_position;
